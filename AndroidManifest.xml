@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weiwhy.stuhelp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a123"
+        android:label="@string/app_name"
+        android:persistent="false"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".guide.GuideActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".guide.WelcomeActivity" >
+        </activity>
+        <activity android:name=".login.LogInActivity" >
+        </activity>
+        <activity android:name=".login.LoguageActivity" >
+        </activity>
+        <activity android:name=".coures.CourseActivity" >
+        </activity>
+        <activity android:name=".coures.CouresActivity2" >
+        </activity>
+        <activity android:name=".xuexiao.ConWe" >
+        </activity>
+        <activity android:name=".coures.Infor" >
+        </activity>
+        <activity android:name=".zhuanye.Activity_Zhuanye" >
+        </activity>
+        
+    </application>
+
+</manifest>
